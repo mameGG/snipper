@@ -56,10 +56,50 @@
       <dd>横幅の指定、別ページでもこのクラスを指定すれば要素の幅が大体揃うはず</dd>
     </dl> 
 
+    <dl class="snipper">
+      <dt class="intro, bg">wrap</dt>
+      <pre>
+        .wrap {
+          display: grid;
+          grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+          /* grid-template-rows: repeat(auto-fill,minmax(250px,1fr)); */
+          grid-gap: 30px;
+        }
+      </pre>
+      <dd>親要素に指定すると子要素がレスポンシブなカード形式で並ぶ</dd>
+    </dl> 
+
+    <dl class="snipper">
+      <dt class="intro, bg">media query</dt>
+      <pre>
+        * モバイル版 
+        ------------------------------------*/
+
+        @media (max-width: 600px) {
+          .page-title {
+            font-size: 2.5rem;
+          }
+
+          /* Header */
+          .main-nav {
+            font-size: 1rem;
+            margin-top: 10px;
+          }
+          .......
+      </pre>
+      <dd>スマホなどモバイル画面で見る際、レスポンシブにする設定</dd>
+    </dl> 
+
+
+    
+
+
     <h1 class=title>JavaScript</h1>
     <dl class="snipper">
       <dt class="intro, bg"></dt>
-      <pre></pre>
+      <pre>
+        
+      </pre>
       <dd ></dd>
     </dl>
 
@@ -67,7 +107,9 @@
 <!--     雛形
     <dl class="snipper">
       <dt class="intro, bg"></dt>
-      <pre></pre>
+      <pre>
+
+      </pre>
       <dd></dd>
     </dl> 
   -->
