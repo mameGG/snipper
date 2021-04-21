@@ -90,18 +90,47 @@
       <dd>スマホなどモバイル画面で見る際、レスポンシブにする設定</dd>
     </dl> 
 
-
+    <dl class="snipper">
+      <dt class="intro, bg">text装飾01</dt>
+      <h1 id="title" data-en="Portfolio Site"><span>ポートフォリオ</span></h1>
+      <pre>
+        #title {
+          position: relative;
+          padding-top: 30px;
+          font-size: 36px;
+          border-bottom: 2px solid rgba(72, 114, 60, 1);
+        }
+        
+        #title span {
+          position: relative;
+          z-index: 2;
+        }
+        
+        #title::before {
+          content: attr(data-en);
+          position: absolute;
+          top: 5px;
+          left: 0;
+          color: rgba(28, 47, 65, 0.7);
+          font-size: 38px;
+          text-transform: uppercase;
+          z-index: 1;
+        }    
+      </pre>
+      <dd>テキストの後ろに影文字とアンダーライン</dd>
+    </dl> 
     
-
 
     <h1 class=title>JavaScript</h1>
     <dl class="snipper">
-      <dt class="intro, bg"></dt>
+      <dt class="intro, bg">アコーディオンメニュー</dt>
       <pre>
-        
+        <a href="https://webukatu.com/wordpress/blog/6087/">https://webukatu.com/wordpress/blog/6087/</a>
       </pre>
       <dd ></dd>
     </dl>
+
+
 
 
 <!--     雛形

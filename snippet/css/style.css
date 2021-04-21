@@ -33,3 +33,31 @@ body {
   border-radius: 5px;
   text-align: center;
 }
+
+
+
+/* snipet用 ------------
+*/
+
+#title {
+	position: relative;
+	padding-top: 30px;
+	font-size: 36px;
+	border-bottom: 2px solid rgba(72, 114, 60, 1);
+}
+
+#title span {
+	position: relative;
+	z-index: 2;
+}
+
+#title::before {
+	content: attr(data-en);
+	position: absolute;
+	top: 5px;
+	left: 0;
+	color: rgba(28, 47, 65, 0.7);
+	font-size: 38px;
+	text-transform: uppercase;
+	z-index: 1;
+}    
